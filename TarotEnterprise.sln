@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{CF6A8656-BB40-48B7-9EDD-CEFBA389943B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tarot.Domain", "src\Tarot.Domain\Tarot.Domain.csproj", "{16177A81-EC5C-42B1-B367-05ADDE9B0CB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tarot.Infrastructure", "src\Tarot.Infrastructure\Tarot.Infrastructure.csproj", "{8F441BBE-202B-4CA2-8A51-214AE8CB73D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tarot.Api", "src\Tarot.Api\Tarot.Api.csproj", "{21C64EE5-F69F-430E-B00F-48615F14501A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{16177A81-EC5C-42B1-B367-05ADDE9B0CB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16177A81-EC5C-42B1-B367-05ADDE9B0CB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16177A81-EC5C-42B1-B367-05ADDE9B0CB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16177A81-EC5C-42B1-B367-05ADDE9B0CB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F441BBE-202B-4CA2-8A51-214AE8CB73D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F441BBE-202B-4CA2-8A51-214AE8CB73D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F441BBE-202B-4CA2-8A51-214AE8CB73D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F441BBE-202B-4CA2-8A51-214AE8CB73D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21C64EE5-F69F-430E-B00F-48615F14501A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21C64EE5-F69F-430E-B00F-48615F14501A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21C64EE5-F69F-430E-B00F-48615F14501A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21C64EE5-F69F-430E-B00F-48615F14501A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{16177A81-EC5C-42B1-B367-05ADDE9B0CB4} = {CF6A8656-BB40-48B7-9EDD-CEFBA389943B}
+		{8F441BBE-202B-4CA2-8A51-214AE8CB73D8} = {CF6A8656-BB40-48B7-9EDD-CEFBA389943B}
+		{21C64EE5-F69F-430E-B00F-48615F14501A} = {CF6A8656-BB40-48B7-9EDD-CEFBA389943B}
+	EndGlobalSection
+EndGlobal
