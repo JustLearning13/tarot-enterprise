@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Tarot.Infrastructure\Tarot.Infrastructure.csproj" />
+    <ProjectReference Include="..\Tarot.Application\Tarot.Application.csproj" />
   </ItemGroup>
 
 </Project>
