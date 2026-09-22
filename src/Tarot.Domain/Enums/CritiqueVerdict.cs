@@ -1,5 +1,5 @@
 namespace Tarot.Domain.Enums;
-
+// Enum to hold the Critique Agent responses
 public enum CritiqueVerdict
 {
     Good = 0,
