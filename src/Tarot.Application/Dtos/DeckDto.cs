@@ -1,3 +1,3 @@
 namespace Tarot.Application.Dtos;
 
-public record DeckDto(string Name, string StyleDescription);
+public record DeckDto(int Id, string Name, string StyleDescription);

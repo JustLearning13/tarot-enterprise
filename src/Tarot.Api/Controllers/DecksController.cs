@@ -25,4 +25,11 @@ public class DecksController : ControllerBase
         var deck = await _deckService.GetDeckByIdAsync(id, ct);
         return deck is null ? NotFound() : Ok(deck);
     }
+
+    [HttpPost]
+    public async Task<ActionResult<DeckDto>> CreateDeck([FromBody] CreateDeckRequest request, CancellationToken ct)
+    {
+        var deck = await _deckService.CreateDeckAsync(request, ct);
+        return CreatedAtAction(nameof(GetDeckById), new { id = deck.Id }, deck);
+    }
 }
