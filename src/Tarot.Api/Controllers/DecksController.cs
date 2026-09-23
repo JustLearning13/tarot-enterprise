@@ -18,4 +18,11 @@ public class DecksController : ControllerBase
         var decks = await _deckService.GetAllDecksAsync(ct);
         return Ok(decks);
     }
+
+    [HttpGet("{id:int}")]
+    public async Task<ActionResult<DeckDto>> GetDeckById(int id, CancellationToken ct)
+    {
+        var deck = await _deckService.GetDeckByIdAsync(id, ct);
+        return deck is null ? NotFound() : Ok(deck);
+    }
 }

@@ -14,4 +14,10 @@ public class DeckService
         var decks = await _deckRepository.GetAllAsync(ct);
         return decks.Select(d => new DeckDto(d.Name, d.StyleDescription)).ToList();
     }
+
+    public async Task<DeckDto?> GetDeckByIdAsync(int id, CancellationToken ct = default)
+    {
+        var deck = await _deckRepository.GetByIdAsync(id, ct);
+        return deck is null ? null : new DeckDto(deck.Name, deck.StyleDescription);
+    }
 }
